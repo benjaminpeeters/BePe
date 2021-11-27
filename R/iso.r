@@ -4,15 +4,15 @@
 
 
 
-#' Load a Matrix
+#' Convert a country name (resp. a vector of country names) to a ISO3 code (resp. a vector of ISO3 codes).
 #'
 #' This function loads a file as a matrix. It assumes that the first column
 #' contains the rownames and the subsequent columns are the sample identifiers.
 #' Any rows with duplicated row names will be dropped with the first one being
 #' kepted.
 #'
-#' @param infile Path to the input file
-#' @return A matrix of the infile
+#' @param infile A (vector of) character(s) containing country names.
+#' @return A (vector of) character(s) containing the ISO3 codes.
 #' @export
 name2iso <- function(name){
 	if(!is.character(name)){name=as.character(name)}
@@ -86,9 +86,9 @@ name2iso <- function(name){
 		}else if(name[i]=='Timor Leste'){name[i] = countryCode[121,1]
 		}else if(name[i]=='Korea'){name[i] = countryCode[119,1]}
 		
-		name[i] = str_to_lower(name[i])
+		name[i] = stringr::str_to_lower(name[i])
 		
-		name[i] = countryCode[name[i]==str_to_lower(countryCode[,1]),2]
+		name[i] = countryCode[name[i]==stringr::str_to_lower(countryCode[,1]),2]
 	}
 	return(name)
 } 

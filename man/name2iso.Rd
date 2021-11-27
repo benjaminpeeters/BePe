@@ -2,15 +2,15 @@
 % Please edit documentation in R/iso.r
 \name{name2iso}
 \alias{name2iso}
-\title{Load a Matrix}
+\title{Convert a country name (resp. a vector of country names) to a ISO3 code (resp. a vector of ISO3 codes).}
 \usage{
 name2iso(name)
 }
 \arguments{
-\item{infile}{Path to the input file}
+\item{infile}{A (vector of) character(s) containing country names.}
 }
 \value{
-A matrix of the infile
+A (vector of) character(s) containing the ISO3 codes.
 }
 \description{
 This function loads a file as a matrix. It assumes that the first column

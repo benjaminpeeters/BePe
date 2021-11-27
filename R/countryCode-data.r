@@ -1,26 +1,24 @@
-#' Arabidopsis QTL data on gravitropism
+#' Table with ISO-3 (ISO 3166-1 alpha-3)
 #'
-#' Data from a QTL experiment on gravitropism in
-#' Arabidopsis, with data on 162 recombinant inbred lines (Ler x
-#' Cvi). The outcome is the root tip angle (in degrees) at two-minute
-#' increments over eight hours.
+#' The names and ISO-3 and ISO-2 codes for countries, based on the UN codes, for use in the construction of datasets.
 #'
 #' @docType data
 #'
-#' @usage data(countryCode)
+#' @name countryCode
 #'
-#' @format An object of class \code{"cross"}; see \code{\link[qtl]{read.cross}}.
+#' @format An object of class data.frame
 #'
 #' @keywords datasets
 #'
-#' @references Moore et al. (2013) Genetics 195:1077-1086
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
-#'
-#' @source \href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
+#' @source \href{http://www.trucsweb.com/tutoriels/internet/iso_3166/}{Link}
 #'
 #' @examples
 #' data(countryCode)
-#' times <- attr(grav, "time")
-#' phe <- grav$pheno
-#' \donttest{iplotCurves(phe, times)}
+#' ISO3 <- 'ZMB'
+#' idx <- countryCode[,2] == ISO3
+#' # what's "ZMB" full name?
+#' print(countryCode[idx,1])
+#' View(countryCode)
 "countryCode"
+
+
