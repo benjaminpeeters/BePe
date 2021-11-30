@@ -118,12 +118,9 @@ iso2name <- function(iso){
 	return(iso)
 } 
 
-#' Load a Matrix
+#' Change the row names of a matrix/data.frame to ISO-3 country codes 
 #'
-#' This function loads a file as a matrix. It assumes that the first column
-#' contains the rownames and the subsequent columns are the sample identifiers.
-#' Any rows with duplicated row names will be dropped with the first one being
-#' kepted.
+#' This function changes the row names of a matrix/data.frame to ISO-3 country codes 
 #'
 #' @param infile Path to the input file
 #' @return A matrix of the infile
@@ -143,18 +140,4 @@ countryNameShift <- function(db){
 } 
 
 
-
-#' Load a Matrix
-#'
-#' This function loads a file as a matrix. It assumes that the first column
-#' contains the rownames and the subsequent columns are the sample identifiers.
-#' Any rows with duplicated row names will be dropped with the first one being
-#' kepted.
-#'
-#' @param infile Path to the input file
-#' @return A matrix of the infile
-#' @export
-Sum <- function(X){
-	return(sum(X, na.rm=T))
-	}
 
