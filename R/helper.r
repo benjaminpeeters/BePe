@@ -60,13 +60,13 @@ helperGraph <- function()
 helperData <- function()
 {
 	
-	dim(): shows the dimensions of the data frame by row and column
-    str(): shows the structure of the data frame
-    summary(): provides summary statistics on the columns of the data frame
-    colnames(): shows the name of each column in the data frame
-    head(): shows the first 6 rows of the data frame
-    tail(): shows the last 6 rows of the data frame
-    View(): shows a spreadsheet-like display of the entire data frame
+	cat('dim(): shows the dimensions of the data frame by row and column \n')
+    cat('str(): shows the structure of the data frame \n')
+    cat('summary(): provides summary statistics on the columns of the data frame \n')
+    cat('colnames(): shows the name of each column in the data frame \n')
+    cat('head(): shows the first 6 rows of the data frame \n')
+    cat('tail(): shows the last 6 rows of the data frame \n')
+    cat('View(): shows a spreadsheet-like display of the entire data frame \n')
 	
 }
 
