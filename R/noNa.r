@@ -185,10 +185,10 @@ Min <- function(x, ...)
 }
 
 
-# xylim
+# lim
 #' Borders (max and min) of all the values present in its arguments.
 #'
-#' ‘xylim’ returns a vector containing the minimum and the maximum values of all the values present in its arguments, omitting NA values. Useful to use automatically determine xlim's and ylim's for plots.
+#' ‘lim’ returns a vector containing the minimum and the maximum values of all the values present in its arguments, omitting NA values. Useful to use automatically determine xlim's and ylim's for plots.
 #'
 #' @param x A vector containing numeric values
 #'
@@ -198,11 +198,11 @@ Min <- function(x, ...)
 #' x <- c(1,2,3,4,5,NA,7,8,9,NA,11,12)
 #' y <- x^2
 #' z <- x^3
-#' plot(x,y,xlim=xylim(x),ylim=xylim(y,z))
+#' plot(x,y,xlim=lim(x),ylim=lim(y,z))
 #' lines(x,z)
 #'
 #' @export
-xylim <- function(...)
+lim <- function(...)
 {
 	return(c(Min(...), Max(...)))
 }

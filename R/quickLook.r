@@ -4,14 +4,14 @@
 
 # Return values of Y for a specific country
 
-cc <- function(Y, country)
+cY <- function(country)
 {
 	return(Y[rownames(Y)==country,])
 }
 
 # graph of Y for the country n
 
-plotY <- function(n)
+pY <- function(n)
 {
 	if(is.numeric(n)){
 		plot(time, Y[n,], main=rownames(Y)[n], type='l') 

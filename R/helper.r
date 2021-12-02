@@ -1,7 +1,7 @@
 
 
 
-# fac2num
+# helper
 #' Convert a factor to numeric
 #'
 #' Convert a factor with numeric levels to a non-factor
@@ -22,7 +22,7 @@ helper <- function()
 }
 
 
-# fac2num
+# helperApply
 #' Convert a factor to numeric
 #'
 #' Convert a factor with numeric levels to a non-factor

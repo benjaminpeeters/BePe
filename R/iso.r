@@ -13,6 +13,7 @@
 #'
 #' @param infile A (vector of) character(s) containing country names.
 #' @return A (vector of) character(s) containing the ISO3 codes.
+#' @family iso3
 #' @export
 name2iso <- function(name){
 	if(!is.character(name)){name=as.character(name)}
@@ -102,6 +103,7 @@ name2iso <- function(name){
 #'
 #' @param infile Path to the input file
 #' @return A matrix of the infile
+#' @family iso3
 #' @export
 iso2name <- function(iso){
 	if(!is.character(iso)){iso=as.character(iso)}
@@ -124,6 +126,7 @@ iso2name <- function(iso){
 #'
 #' @param infile Path to the input file
 #' @return A matrix of the infile
+#' @family iso3
 #' @export
 countryNameShift <- function(db){
 	mismatching = NULL

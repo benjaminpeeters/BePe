@@ -2,7 +2,7 @@
 % Please edit documentation in R/iso.r
 \name{countryNameShift}
 \alias{countryNameShift}
-\title{Load a Matrix}
+\title{Change the row names of a matrix/data.frame to ISO-3 country codes}
 \usage{
 countryNameShift(db)
 }
@@ -13,8 +13,11 @@ countryNameShift(db)
 A matrix of the infile
 }
 \description{
-This function loads a file as a matrix. It assumes that the first column
-contains the rownames and the subsequent columns are the sample identifiers.
-Any rows with duplicated row names will be dropped with the first one being
-kepted.
+This function changes the row names of a matrix/data.frame to ISO-3 country codes
 }
+\seealso{
+Other iso3: 
+\code{\link{iso2name}()},
+\code{\link{name2iso}()}
+}
+\concept{iso3}
