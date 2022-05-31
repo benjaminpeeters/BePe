@@ -2,7 +2,7 @@
 % Please edit documentation in R/manipShortcuts.r
 \name{pause}
 \alias{pause}
-\title{Pause until <Enter> is pressed}
+\title{Pause until 'Enter' is pressed}
 \usage{
 pause()
 }

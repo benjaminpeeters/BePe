@@ -21,6 +21,7 @@ kepted.
 \seealso{
 Other iso3: 
 \code{\link{countryNameShift}()},
+\code{\link{incorrect.name2iso}()},
 \code{\link{iso2name}()}
 }
 \concept{iso3}

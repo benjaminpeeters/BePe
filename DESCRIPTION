@@ -18,6 +18,6 @@ Imports:
 URL: https://github.com/benjaminpeeters/BePe
 BugReports: https://github.com/benjaminpeeters/BePe/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 ByteCompile: true
 LazyData: true

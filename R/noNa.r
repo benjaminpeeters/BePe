@@ -208,6 +208,36 @@ lim <- function(...)
 }
 
 
+# Cor
+#' Correlation without NA's'
+#'
+#' ‘Cor’ computes the correlation of ‘x’ and ‘y’ if these are vectors.  If ‘x’ and ‘y’ are matrices then the correlations between the columns of ‘x’ and the columns of ‘y’ are computed.  Missing values are handled by casewise deletion. If there are no complete cases, that gives an error.
+#'
+#' @param 
+#'    x: a numeric vector, matrix or data frame.
+#'    y: ‘NULL’ (default) or a vector, matrix or data frame with compatible dimensions to ‘x’.  The default is equivalent to ‘y = x’ (but more efficient).
+#'
+#' @export
+Cor <- function(x,y=NULL, method = 'pearson')
+{
+	return(cor(x,y=NULL, use='complete.obs', method=method))
+}
+
+
+
+# na2zero
+#' Switches NA's by zeros
+#'
+#' @param db a data frame
+#'
+#' @return a data frame with NA's converted in zeros
+#'
+#' @export
+na2zero <-function(db){
+	
+	db[is.na(db)] = 0
+	return(db)
+}
 
 
 

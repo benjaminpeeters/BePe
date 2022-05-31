@@ -17,6 +17,7 @@ This function changes the row names of a matrix/data.frame to ISO-3 country code
 }
 \seealso{
 Other iso3: 
+\code{\link{incorrect.name2iso}()},
 \code{\link{iso2name}()},
 \code{\link{name2iso}()}
 }

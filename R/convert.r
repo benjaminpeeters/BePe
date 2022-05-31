@@ -23,7 +23,7 @@ fac2num <- function(x)
     nam <- names(x)
     x <- as.numeric(as.character(x))
     names(x) <- nam
-    x
+    return(x)
 }
 
 
