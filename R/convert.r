@@ -58,7 +58,7 @@ df2mat <- function(df)
 	}
 	
 	mat = as.matrix(df[,colnum])
-	rownames(mat) = nam
+#	rownames(mat) = nam
 	return(mat)
 }
 

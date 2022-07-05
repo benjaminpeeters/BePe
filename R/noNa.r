@@ -220,7 +220,7 @@ lim <- function(...)
 #' @export
 Cor <- function(x,y=NULL, method = 'pearson')
 {
-	return(cor(x,y=NULL, use='complete.obs', method=method))
+	return(cor(x=x,y=y, use='complete.obs', method=method))
 }
 
 
@@ -233,7 +233,7 @@ Cor <- function(x,y=NULL, method = 'pearson')
 #' @return a data frame with NA's converted in zeros
 #'
 #' @export
-na2zero <-function(db){
+na2zero <- function(db){
 	
 	db[is.na(db)] = 0
 	return(db)
@@ -241,8 +241,10 @@ na2zero <-function(db){
 
 
 
-
-
+#' @export
+ISNA <- function(X){
+	return(sum(is.na(X)))
+}
 
 
 
